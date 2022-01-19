@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import "alertifyjs/build/css/alertify.min.css"
 import {BrowserRouter} from "react-router-dom"
 import { render } from 'react-dom';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+
 render(
   
   <React.StrictMode>

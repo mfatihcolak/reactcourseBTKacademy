@@ -42,7 +42,7 @@ export default class ProductList extends Component {
                                         {product.unitsInStock}
                                     </td>
                                     <td>
-                                    <button type="button" onClick={() => this.props.addToCart(product)} class="btn btn-warning">Add To Card</button>
+                                    <button type="button" onClick={() => this.props.addToCart(product)} class="btn btn-warning">Add To Cart</button>
                                     </td>
                                 </tr>))}
                     </tbody>

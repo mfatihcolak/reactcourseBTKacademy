@@ -51,7 +51,9 @@ export default class App extends Component {
     return (
 
       <div className="App">
+
         <div class="container">
+
           <Navi removeFromCart={this.removeFromCart} cart={this.state.cart} />
           <div class="row align-items-start">
 
@@ -76,8 +78,11 @@ export default class App extends Component {
             </BrowserRouter>
           </div>
         </div>
-        <div class ="container">
-        <div class="clearfix">
+        <p class="placeholder-glow">
+          <span class="placeholder col-12"></span>
+        </p>
+
+        <div class="container">
           <div class="card bg-dark text-white">
             <img src="https://pbs.twimg.com/profile_images/1233040405094158336/ohJoibic_400x400.jpg" class="card-img" alt="..." />
             <div class="card-img-overlay">
@@ -89,32 +94,19 @@ export default class App extends Component {
               </div>
             </div>
           </div>
-          <p>
-            A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
-          </p>
-
-          <p>
-            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
-          </p>
-
-          <p>
-            And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
-          </p>
+          <div class="card bg-dark text-white">
+            <img src="https://images.squarespace-cdn.com/content/v1/59440628b3db2b2f36a66f10/1612628670100-3ZW5HRX4MMQFG7MD75EB/DSC_2629.jpeg?format=1000w" class="card-img" alt="..."/>
+              <div class="card-img-overlay">
+                <h5 class="card-title">DENEME</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+              </div>
+          </div>
+          
         </div>
-        </div>
-
-
-
       </div>
     )
   }
 }
 
 
-// {/* <Col xs="3">
-//               <CategoryList currentCategory={this.state.currentCategory} changeCategory={this.changeCategory} info={categoryInfo} />
-//             </Col>
-//             <Col xs="9">
-//               <ProductList products={this.state.products} currentCategory={this.state.currentCategory} info={productInfo} />
-//             </Col>
-//           </Row > */}
