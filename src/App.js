@@ -4,7 +4,7 @@ import ProductList from "./ProductList";
 import { Container, Row } from "reactstrap";
 import alertify from "alertifyjs";
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Router, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
 import CartList from "./CartList";
 
@@ -45,9 +45,12 @@ export default class App extends Component {
     this.setState({ cart: newCart })
   }
 
+  
+
   render() {
     let productInfo = { title: "Product List" }
     let categoryInfo = { title: "Category List" }
+    
     return (
 
       <div className="App">
@@ -82,9 +85,13 @@ export default class App extends Component {
             </BrowserRouter>
           </div>
         </div>
+        
         <p class="placeholder-glow">
           <span class="placeholder col-12"></span>
         </p>
+
+        
+        
 
         <div class="container">
           <div class="card bg-dark text-white">

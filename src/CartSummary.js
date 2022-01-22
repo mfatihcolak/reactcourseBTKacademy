@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Badge,  NavItem, NavLink } from 'reactstrap'
+import { Badge, NavItem, NavLink } from 'reactstrap'
+
 
 export default class CartSummary extends Component {
 
     renderSummary() {
         return (
-            
+
+
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     CART
@@ -18,16 +21,17 @@ export default class CartSummary extends Component {
                                 <li class="list-group-item"><a class="dropdown-item" key={cartItem.product.id} >{cartItem.product.productName}
                                     <Badge type="button" color='danger' onClick={() => this.props.removeFromCart(cartItem.product)}>x</Badge>
                                     <Badge color='success'> {cartItem.quantity} </Badge>
+
                                 </a></li>
                             ))
                         }
+
                     </a></li>
                     <p class="placeholder-glow">
                         <span class="placeholder col-12"></span>
                     </p>
-                    <li><a class="dropdown-item" >
-                        <Link to={"cart"}></Link>
-                        </a></li>
+                   
+
 
                 </ul>
             </li>

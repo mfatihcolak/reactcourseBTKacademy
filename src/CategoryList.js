@@ -22,10 +22,10 @@ export default class CategoryList extends Component {
         return (
             <div>
                 <h3>{this.props.info.title}</h3>
-                <ul class="list-group list-group-flush">
+                <ul class="list-group">
                     {
                 this.state.categories.map(category => (
-                <li class="list-group-item active" aria-current= {category.categoryName === this.props.currentCategory? true : false} onClick={() => this.props.changeCategory(category)} key={category.id}> 
+                <li class="list-group-item " type="button" aria-current= {category.categoryName === this.props.currentCategory? true : false} onClick={() => this.props.changeCategory(category)} key={category.id}> 
                  {category.categoryName}
                  </li>
                 ))}

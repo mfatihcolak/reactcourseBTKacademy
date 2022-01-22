@@ -8,7 +8,7 @@ export default class Navi extends Component {
         return (
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">NORTHWİND APP</a>
+                    <a class="navbar-brand" href="/">NORTHWİND APP</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -20,16 +20,17 @@ export default class Navi extends Component {
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Link</a>
                             </li>
-                            <CartSummary removeFromCart={this.props.removeFromCart} cart={this.props.cart}/>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li>
-                           
+                            <CartSummary removeFromCart={this.props.removeFromCart} cart={this.props.cart} />
+                            <button type="button" class="btn btn-primary" href="cart">
+                                buton
+                            </button>
+                            
+                            
 
                         </ul>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
