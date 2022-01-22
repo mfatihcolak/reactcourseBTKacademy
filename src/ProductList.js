@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 
 export default class ProductList extends Component {
-   
+
 
     render() {
         return (
@@ -18,7 +18,7 @@ export default class ProductList extends Component {
                             <th scope="col">Product Name</th>
                             <th scope="col">Unit Price</th>
                             <th scope="col">QuantityPerUnit</th>
-                            <th scope="col"> UnitsInStock</th>
+                            <th scope="col">UnitsInStock</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
@@ -28,21 +28,13 @@ export default class ProductList extends Component {
                                 <tr key={product.id}>
                                     <th scope="row">
                                         {product.id}
-                                  </th>
+                                    </th>
+                                    <td>{product.productName}</td>
+                                    <td>{product.unitPrice}</td>
+                                    <td>{product.quantityPerUnit}</td>
+                                    <td>{product.unitsInStock}</td>
                                     <td>
-                                        {product.productName}
-                                    </td>
-                                    <td>
-                                        {product.unitPrice}
-                                    </td>
-                                    <td>
-                                        {product.quantityPerUnit}
-                                    </td>
-                                    <td>
-                                        {product.unitsInStock}
-                                    </td>
-                                    <td>
-                                    <button type="button" onClick={() => this.props.addToCart(product)} class="btn btn-warning">Add To Cart</button>
+                                        <button type="button" onClick={() => this.props.addToCart(product)} class="btn btn-warning">Add To Cart</button>
                                     </td>
                                 </tr>))}
                     </tbody>

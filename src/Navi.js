@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import CartList from './CartList'
 import CartSummary from './CartSummary'
 
 export default class Navi extends Component {
@@ -22,6 +24,8 @@ export default class Navi extends Component {
                             <li class="nav-item">
                                 <a class="nav-link disabled">Disabled</a>
                             </li>
+                           
+
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
