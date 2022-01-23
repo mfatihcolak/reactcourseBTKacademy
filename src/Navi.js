@@ -18,15 +18,15 @@ export default class Navi extends Component {
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href='form1'>Form Demo 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href='form2'>Form Demo 2</a>
                             </li>
                             <CartSummary removeFromCart={this.props.removeFromCart} cart={this.props.cart} />
-                            <button type="button" class="btn btn-primary" href="cart">
-                                buton
-                            </button>
-                            
-                            
-
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="cart">Cart Detail</a>
+                            </li>
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

@@ -37,6 +37,9 @@ export default class CartList extends Component {
                                     <td>
                                         {cartItem.unitsInStock}
                                     </td>
+                                    <td>
+                                    <button type="button" class="btn btn-primary"  onClick={() => this.props.removeFromCart(cartItem.product)}>Remove</button>
+                                    </td>
                                 </tr>
                             ))
                         }

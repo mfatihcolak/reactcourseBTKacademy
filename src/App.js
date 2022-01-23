@@ -7,10 +7,12 @@ import React, { Component } from 'react'
 import { BrowserRouter, Link, Route, Router, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
 import CartList from "./CartList";
+import FormDemo1 from "./FormDemo1";
+import FormDemo2 from "./FormDemo2";
 
 export default class App extends Component {
 
-  state = { currentCategory: "", products: [], cart: [], cartItems:[] }
+  state = { currentCategory: "", products: [], cart: []}
 
   componentDidMount() {
     this.getProducts()
@@ -43,6 +45,8 @@ export default class App extends Component {
   removeFromCart = (product) => {
     let newCart = this.state.cart.filter(c => c.product.id !== product.id)
     this.setState({ cart: newCart })
+    alertify.error(product.productName + " removed from cart", 1)
+
   }
 
   
@@ -81,6 +85,9 @@ export default class App extends Component {
                       removeFromCart={this.removeFromCart}>
                     </CartList></div>} />
                 <Route path="*" element={<div class="col-9"><NotFound></NotFound></div>}/>
+                <Route path ="form1" element={<div class="col-9"><FormDemo1></FormDemo1></div>}></Route>
+                <Route path ="form2" element={<div class="col-9"><FormDemo2></FormDemo2></div>}></Route>
+
               </Routes>
             </BrowserRouter>
           </div>
