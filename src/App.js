@@ -16,6 +16,9 @@ export default class App extends Component {
 
   componentDidMount() {
     this.getProducts()
+    let oldCarts = localStorage.getItem("cart")
+    oldCarts = JSON.parse(oldCarts || "[]")
+    this.setState({ cart: oldCarts })
   }
 
   changeCategory = category => {
@@ -39,12 +42,14 @@ export default class App extends Component {
       newCart.push({ product: product, quantity: 1 })
     }
     this.setState({ cart: newCart })
+    localStorage.setItem("cart",JSON.stringify(newCart))
     alertify.success(product.productName + " added to cart", 1)
   }
 
   removeFromCart = (product) => {
     let newCart = this.state.cart.filter(c => c.product.id !== product.id)
     this.setState({ cart: newCart })
+    localStorage.setItem("cart",JSON.stringify(newCart))
     alertify.error(product.productName + " removed from cart", 1)
 
   }
