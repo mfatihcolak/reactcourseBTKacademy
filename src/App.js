@@ -107,13 +107,13 @@ export default class App extends Component {
 
         <div class="container">
           <div class="card bg-dark text-white">
-            <img src="https://pbs.twimg.com/profile_images/1233040405094158336/ohJoibic_400x400.jpg" class="card-img" alt="..." />
+            <img src="https://pbs.twimg.com/profile_images/1449546655733268482/A_p3Jr-X_400x400.jpg" class="card-img" alt="..." />
             <div class="card-img-overlay">
-              <h5 class="card-title text-warning">MEHMET FARUK ÖNCEL SİTENİN SAHİBİ</h5>
+              <h5 class="card-title text-warning">FATİH ÇOLAK SİTENİN SAHİBİ</h5>
               <div class="btn-group">
-                <a href="https://twitter.com/OncelMFaruk" class="btn btn-primary" aria-current="page">Twitter</a>
-                <a href="https://www.instagram.com/mfarukoncel/" class="btn btn-primary">INSTAGRAM</a>
-                <a href="#" class="btn btn-primary">SNAPCHAT</a>
+                <a href="https://twitter.com/mamak1509" class="btn btn-primary" aria-current="page">Twitter</a>
+                <a href="https://www.instagram.com/fatihcolak42/" class="btn btn-primary">INSTAGRAM</a>
+                <a href="https://github.com/mfatihcolak" class="btn btn-primary">GİTHUB</a>
               </div>
             </div>
           </div>
